@@ -57,7 +57,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center" >
 
       <!-- <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -65,10 +65,10 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="#">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#">Products</a></li>
-          <li><a class="nav-link scrollto" href="#">Gallery</a></li>
+          <li><a class="nav-link scrollto active" onclick="scrollHome()">Home</a></li>
+          <li><a class="nav-link scrollto" onclick="scrollAbout()">About Us</a></li>
+          <li><a class="nav-link scrollto" onclick="scrollProducts()">Products</a></li>
+          <li><a class="nav-link scrollto" onclick="scrollGallery()">Gallery</a></li>
           <!-- <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -87,19 +87,19 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="#">Contact Us</a></li>
+          <li><a class="nav-link scrollto" onclick="scrollContact()">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="tel:+91 93229 96110" class="appointment-btn scrollto"><span class="d-none d-md-inline">Buy</span> Online</a>
+      <a href="tel:+91 93229 96110" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span>Now Call </a>
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container">
+    <div class="container" id="Home">
       <br><br>
       <h2>Welcome to </h2>
       <h1>EMBY HOMOEOPATHIC PHARMACY - HOMEOPATHIC MEDICINE</h1>
@@ -112,7 +112,7 @@
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
-      <div class="container">
+      <div class="container" >
 
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
@@ -170,7 +170,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container-fluid">
+      <div class="container-fluid" id="About">
 
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
@@ -393,7 +393,7 @@
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
-      <div class="container">
+      <div class="container" id="Product">
 
         <div class="section-title">
           <h2>Products</h2>
@@ -814,16 +814,16 @@
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
-      <div class="container">
+      <div class="container" >
 
-        <div class="section-title">
+        <div class="section-title" >
           <h2>Gallery</h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
       </div>
 
-      <div class="container-fluid">
-        <div class="row no-gutters">
+      <div class="container-fluid" id="Gallery">
+        <div class="row no-gutters" >
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
@@ -896,7 +896,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="container" id="Contact">
 
         <div class="section-title">
           <h2>Contact</h2>
@@ -994,11 +994,11 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Products</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Gallery</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a onclick="scrollHome()">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a onclick="scrollAbout()">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a onclick="scrollProducts()">Products</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a onclick="scrollGallery()">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a onclick="scrollContact()">Contact Us</a></li>
             </ul>
           </div>
 
@@ -1025,15 +1025,23 @@
       </div>
     </div>
 
-    <!-- <div class="container d-md-flex py-4">
+    <div class="container  py-4">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          Site Designed & Maintain by <a href="tel:+91 7021422590"> hrishifind</a>
+        </div>
+      </div>
+    </div>
 
-      <div class="me-md-auto text-center text-md-start">
+    <!-- <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-center ">
         <div class="copyright">
           &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-         
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Site Designed & Maintain by <a href="tel:+91 7021422590"> hrishifind</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -1157,6 +1165,53 @@
     }
 </style>
 <!-- end widget -->
+
+<!-- menu scroll -->
+<script>
+  function scrollHome() {
+    let e = document.getElementById("Home");
+    e.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'start'
+    });
+  }
+  function scrollAbout() {
+    let e = document.getElementById("About");
+    // This ends the block to the window 
+    // bottom and also aligns the view to the center 
+    e.scrollIntoView({
+      block: 'end',
+      behavior: 'smooth',
+      inline: 'center'
+    });
+  }
+  function scrollProducts() {
+    let e = document.getElementById("Product");
+    e.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'start'
+    });
+  }
+  function scrollGallery() {
+    let e = document.getElementById("Gallery");
+    e.scrollIntoView({
+      block: 'end',
+      behavior: 'smooth',
+      inline: 'center'
+    });
+  }
+  function scrollContact() {
+    let e = document.getElementById("Contact");
+    e.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'start'
+    });
+  }
+</script>
+<!-- end menu scroll -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
